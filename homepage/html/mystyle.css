@@ -1,0 +1,41 @@
+ /*For menubar on each html page*/
+  .box1 {
+       background-color:#a1a19a;
+       width:100%;
+       height:100%;}
+
+  li {
+      display:inline;
+      margin-left:7%;
+    
+      }
+
+ /*For all the links in menubar*/
+  .link {
+      font-family:Georgia;
+      font-size:25px;
+      font-weight:bold;
+      text-decoration:none;
+      outline:4px solid #dededb;
+      padding-top:12px;
+      padding-bottom:30px;
+      padding-left:3px;
+      padding-right:3px;
+      border-radius:8px;
+      }
+
+  a:hover{
+        color:#cd5c5c;}
+  a:active{
+        color:red;}
+
+ /*For progress bar to show how much site is visited so far*/
+  progress {
+             background:#fff;
+          }
+ /*To maintain the page when window is minimized*/
+  body {
+         min-width:1200px;
+       }
+
+

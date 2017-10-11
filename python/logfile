@@ -1,0 +1,18 @@
+LOG:  database system was shut down at 2014-10-06 12:00:41 IST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  syntax error at or near "serializable" at character 34
+STATEMENT:  show transaction isolation level serializable;
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+STATEMENT:  show transaction isolation level;
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+STATEMENT:  begin;
+ERROR:  could not serialize access due to concurrent update
+STATEMENT:  update student set tot_cred = 20 where name = 'Tanaka';
+ERROR:  current transaction is aborted, commands ignored until end of transaction block
+STATEMENT:  begin;
+LOG:  received SIGHUP, reloading configuration files
+LOG:  received smart shutdown request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
